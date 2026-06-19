@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">🎮 Game Studio Editor</string>
+    <string name="add_cube">+ Cube</string>
+    <string name="add_sphere">+ Sphere</string>
+    <string name="add_cylinder">+ Cylinder</string>
+    <string name="play">Play</string>
+    <string name="stop">Stop</string>
+    <string name="save">Save</string>
+    <string name="load">Load</string>
+    <string name="properties">Properties</string>
+    <string name="position">Position</string>
+    <string name="scale">Scale</string>
+    <string name="rotation">Rotation</string>
+    <string name="color">Color</string>
+</resources>

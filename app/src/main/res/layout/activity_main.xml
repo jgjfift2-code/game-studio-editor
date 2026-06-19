@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="#1a1a1a">
+
+    <!-- Toolbar with controls -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#2a2a2a"
+        android:padding="8dp">
+
+        <Button
+            android:id="@+id/btn_add_cube"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="+ Cube"
+            android:textSize="12sp"
+            android:layout_margin="4dp" />
+
+        <Button
+            android:id="@+id/btn_add_sphere"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="+ Sphere"
+            android:textSize="12sp"
+            android:layout_margin="4dp" />
+
+        <Button
+            android:id="@+id/btn_add_cylinder"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="+ Cylinder"
+            android:textSize="12sp"
+            android:layout_margin="4dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#444444"
+            android:layout_margin="8dp" />
+
+        <Button
+            android:id="@+id/btn_play_stop"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="Play"
+            android:textSize="12sp"
+            android:layout_margin="4dp"
+            android:background="@android:color/holo_green_dark" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#444444"
+            android:layout_margin="8dp" />
+
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:textSize="12sp"
+            android:layout_margin="4dp" />
+
+        <Button
+            android:id="@+id/btn_load"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="Load"
+            android:textSize="12sp"
+            android:layout_margin="4dp" />
+
+    </LinearLayout>
+
+    <!-- 3D Viewport -->
+    <FrameLayout
+        android:id="@+id/gl_container"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+    <!-- Properties Panel -->
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#2a2a2a"
+        android:padding="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Properties"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:layout_marginBottom="8dp" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>
